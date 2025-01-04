@@ -31,7 +31,7 @@ export default function Hero() {
           </div>
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?w=800"
+              src="https://media.licdn.com/dms/image/v2/D5603AQERcx2BcsqEmQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711795833930?e=1741219200&v=beta&t=bE5JSwIHKHz4VSmOQBvypifsSz-vVr2x0Dv6pKdGSnk"
               alt="Developer workspace"
               className="rounded-lg shadow-2xl w-full max-w-md"
             />
