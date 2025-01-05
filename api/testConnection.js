@@ -1,20 +1,20 @@
-import mongoose from 'mongoose';
+import { MongoClient } from 'mongodb';
 
 export default async (req, res) => {
   const uri = process.env.MONGODB_URI;
 
-  const clientOptions = {
+  const client = new MongoClient(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  };
+  });
 
   try {
     // Connect to MongoDB
-    await mongoose.connect(uri, clientOptions);
+    await client.connect();
     console.log("Successfully connected to MongoDB!");
 
     // Perform a simple command to verify the connection
-    await mongoose.connection.db.admin().command({ ping: 1 });
+    await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
 
     res.status(200).send('Successfully connected to MongoDB!');
@@ -23,6 +23,6 @@ export default async (req, res) => {
     res.status(500).send(`Failed to connect to MongoDB: ${error.message}`);
   } finally {
     // Ensures that the client will close when you finish/error
-    await mongoose.disconnect();
+    await client.close();
   }
 };
