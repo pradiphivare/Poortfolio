@@ -18,7 +18,7 @@ const experiences = [
   {
     title: 'Intern - Full Stack Developer',
     company: 'Startup Hub',
-    period: 'jan 2022  – june 2021',
+    period: 'jan 2022  – june 2022',
     description:
       'Contributed to developing interactive web interfaces and backend services, laying the foundation for a career in development and DevOps.',
   },
