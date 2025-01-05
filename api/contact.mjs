@@ -41,5 +41,3 @@ export default async (req, res) => {
     res.status(405).send('Method Not Allowed');
   }
 };
-```
-MONGODB_URI=mongodb+srv://pradiphivare2510:Pradip@cluster0.k7mjk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
