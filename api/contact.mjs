@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const contactSchema = new mongoose.Schema({
   name: String,
@@ -8,7 +8,7 @@ const contactSchema = new mongoose.Schema({
 
 const Contact = mongoose.models.Contact || mongoose.model('Contact', contactSchema);
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
