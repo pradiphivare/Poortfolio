@@ -45,7 +45,8 @@ export default function Experience() {
                 }`}
               >
                 <div className="w-1/2" />
-                <div className="w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 rounded-full border-4 border-blue-400 bg-white" />
+                <div className="w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 rounded-fu
+                ll border-4 border-blue-400 bg-white" />
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
                   <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
                     <h3 className="text-xl font-bold text-gray-900">

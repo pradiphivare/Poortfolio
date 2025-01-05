@@ -19,7 +19,7 @@ export default function Contact() {
     setStatus('Sending...');
     
     try {
-      const response = await fetch('https://your-backend-api.com/contact', {
+      const response = await fetch('http://localhost:5000/contact', { // Update the URL to your backend endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
