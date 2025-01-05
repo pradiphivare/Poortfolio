@@ -38,6 +38,7 @@ export default async (req, res) => {
       res.status(500).send('Failed to save message to database');
     }
   } else {
+    console.error('Method Not Allowed');
     res.status(405).send('Method Not Allowed');
   }
 };
