@@ -13,10 +13,15 @@ module.exports = async (req, res) => {
     const { name, email, message } = req.body;
 
     if (!mongoose.connection.readyState) {
-      await mongoose.connect(process.env.MONGODB_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      });
+      try {
+        await mongoose.connect(process.env.MONGODB_URI, {
+          useNewUrlParser: true,
+          useUnifiedTopology: true,
+        });
+      } catch (error) {
+        console.error('Error connecting to MongoDB:', error);
+        return res.status(500).send('Failed to connect to database');
+      }
     }
 
     const newContact = new Contact({ name, email, message });
@@ -25,6 +30,7 @@ module.exports = async (req, res) => {
       await newContact.save();
       res.status(200).send('Message received and saved to database');
     } catch (error) {
+      console.error('Error saving message to database:', error);
       res.status(500).send('Failed to save message to database');
     }
   } else {
