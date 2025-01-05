@@ -20,7 +20,7 @@ export default async (req, res) => {
     res.status(200).send('Successfully connected to MongoDB!');
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
-    res.status(500).send('Failed to connect to MongoDB');
+    res.status(500).send(`Failed to connect to MongoDB: ${error.message}`);
   } finally {
     // Ensures that the client will close when you finish/error
     await mongoose.disconnect();
