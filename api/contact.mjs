@@ -12,6 +12,11 @@ export default async (req, res) => {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
 
+    if (!name || !email || !message) {
+      console.error('Validation error: Missing required fields');
+      return res.status(400).send('Validation error: Missing required fields');
+    }
+
     if (!mongoose.connection.readyState) {
       try {
         await mongoose.connect(process.env.MONGODB_URI);
@@ -36,3 +41,5 @@ export default async (req, res) => {
     res.status(405).send('Method Not Allowed');
   }
 };
+```
+MONGODB_URI=mongodb+srv://pradiphivare2510:Pradip@cluster0.k7mjk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
