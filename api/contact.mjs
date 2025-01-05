@@ -31,7 +31,7 @@ export default async (req, res) => {
 
     try {
       await newContact.save();
-      console.log("Message saved to database");
+      console.log("Message saved to database:", newContact);
       res.status(200).send('Message received and saved to database');
     } catch (error) {
       console.error('Error saving message to database:', error);
