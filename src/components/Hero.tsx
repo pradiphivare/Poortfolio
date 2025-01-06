@@ -16,25 +16,31 @@ export default function Hero() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Hi, I'm <span className="text-cyan-400 neon-text">Pradip Hivare</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-300">
-              DevOps Engineer & Full Stack Developer
+            <p className="text-xl md:text-2xl mb-6 text-gray-300">
+              DevOps Engineer | Cloud Enthusiast | Full Stack Developer
             </p>
-            <p className="text-gray-400 mb-8 leading-relaxed">
-              Passionate about building{" "}
-              <span className="text-cyan-400 neon-text">scalable infrastructure</span> and creating{" "}
-              <span className="text-cyan-500 neon-text">elegant solutions</span> to complex problems. Specializing
-              in <span className="text-cyan-400 neon-text">cloud architecture</span> and modern development practices.
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              I'm passionate about creating{" "}
+              <span className="text-cyan-400 neon-text">scalable cloud architectures</span> and automating{" "}
+              <span className="text-cyan-500 neon-text">infrastructure workflows</span>. With expertise in{" "}
+              <span className="text-cyan-400 neon-text">CI/CD pipelines, observability </span>and 
+              <span className="text-cyan-400 neon-text"> modern development practices</span>
+             , I strive to deliver reliable, efficient, and secure solutions for complex challenges.
             </p>
-            <div className="flex justify-center md:justify-start space-x-6">
+            <div className="flex justify-center md:justify-start space-x-6 mt-6">
               <a
                 href="https://github.com"
                 className="hover:text-cyan-400 transition-transform transform hover:scale-125"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Github size={30} />
               </a>
               <a
                 href="http://www.linkedin.com/in/pradip-hivare-48a50719b/"
                 className="hover:text-cyan-400 transition-transform transform hover:scale-125"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={30} />
               </a>
