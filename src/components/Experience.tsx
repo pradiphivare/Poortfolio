@@ -5,22 +5,67 @@ const experiences = [
     title: 'Engineer',
     company: 'Tata-Elxsi',
     period: 'Dec 2023 – Current',
-    description:
-      'Automated infrastructure provisioning with Terraform and Ansible, enhanced CI/CD workflows, and migrated monitoring stacks to advanced observability tools like Grafana Cloud and VictoriaMetrics.',
+    description: (
+      <ul className="list-disc pl-5">
+        <li>
+          Automated infrastructure provisioning using <strong>Terraform</strong> and <strong>Ansible</strong>, improving scalability and reliability.
+        </li>
+        <li>
+          Engineered robust CI/CD workflows with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, reducing release cycles by 30 hours monthly and enhancing iteration speed for critical features.
+        </li>
+        <li>
+          Led migration to advanced observability tools like <strong>Grafana Cloud</strong> and <strong>VictoriaMetrics</strong>, ensuring high availability and optimized incident response.
+        </li>
+        <li>
+          Migrated monitoring workloads from <strong>Prometheus</strong> to <strong>VictoriaMetrics</strong>, improving performance and storage efficiency for high-cardinality metrics.
+        </li>
+        <li>
+          Reduced 30-50 support tickets monthly through proactive monitoring and alerting integrations across cloud applications.
+        </li>
+      </ul>
+    ),
   },
   {
     title: 'DevOps Engineer',
     company: 'NoZanzat',
     period: 'July 2022 – Sep 2023',
-    description:
-      'Designed and implemented CI/CD pipelines, managed AWS infrastructure, and automated provisioning workflows with Terraform and Ansible, reducing deployment time and configuration errors.',
+    description: (
+      <ul className="list-disc pl-5">
+        <li>
+          Focused on <strong>Web Development</strong> and <strong>DevOps Foundation</strong>, bridging development and operational workflows.
+        </li>
+        <li>
+          Designed and implemented CI/CD pipelines using <strong>Jenkins</strong>, accelerating deployment speed by 40%.
+        </li>
+        <li>
+          Automated cloud infrastructure provisioning in <strong>AWS</strong> using <strong>Terraform</strong> and <strong>CloudFormation</strong>, reducing manual errors and improving scalability.
+        </li>
+        <li>
+          Enabled seamless setup of virtual machines and databases through automated workflows, achieving 70% process automation.
+        </li>
+        <li>
+          Optimized the software development lifecycle (SDLC) by collaborating with development teams to automate testing and environment provisioning, reducing bottlenecks.
+        </li>
+      </ul>
+    ),
   },
   {
     title: 'Intern - Full Stack Developer',
     company: 'Startup Hub',
-    period: 'jan 2022  – june 2022',
-    description:
-      'Contributed to developing interactive web interfaces and backend services, laying the foundation for a career in development and DevOps.',
+    period: 'Jan 2022 – June 2022',
+    description: (
+      <ul className="list-disc pl-5">
+        <li>
+          Contributed to building interactive <strong>web interfaces</strong> using modern front-end frameworks.
+        </li>
+        <li>
+          Developed scalable backend services, enhancing the overall system performance and user experience.
+        </li>
+        <li>
+          Gained foundational knowledge in full-stack development and deployment processes, paving the way for future roles in DevOps and automation.
+        </li>
+      </ul>
+    ),
   },
 ];
 
@@ -45,8 +90,7 @@ export default function Experience() {
                 }`}
               >
                 <div className="w-1/2" />
-                <div className="w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 rounded-fu
-                ll border-4 border-blue-400 bg-white" />
+                <div className="w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 rounded-full border-4 border-blue-400 bg-white" />
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
                   <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
                     <h3 className="text-xl font-bold text-gray-900">
@@ -56,7 +100,7 @@ export default function Experience() {
                       {exp.company}
                     </p>
                     <p className="text-gray-600 mb-2">{exp.period}</p>
-                    <p className="text-gray-700">{exp.description}</p>
+                    <div className="text-gray-700">{exp.description}</div>
                   </div>
                 </div>
               </div>
