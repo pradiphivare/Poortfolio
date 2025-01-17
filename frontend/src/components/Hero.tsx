@@ -54,17 +54,18 @@ export default function Hero() {
           </div>
 
           {/* Image Section */}
-          <div className="md:w-1/2 flex justify-center relative">
-            <div className="absolute inset-0 w-80 h-80 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-lg animate-pulse"></div>
-            <div className="relative p-6 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQEcFmwc4n_vRA/profile-displayphoto-shrink_400_400/B56ZQ56mh.HoAg-/0/1736138453842?e=1741824000&v=beta&t=al0Q83w1YkEMiISxi1PyZ4mFk0VsIlFhQ3MXkWD74d4"
-                alt="Pradip Hivare"
-                className="relative rounded-full shadow-2xl w-64 h-64 transform hover:scale-105 transition-transform duration-300"
-                style={{ marginLeft: '10px' }} // Adjust the margin to move the image to the right
-              />
-            </div>
-          </div>
+        
+<div className="md:w-1/2 flex justify-center relative">
+  <div className="absolute inset-0 w-80 h-80 bg-gradient-to-br from-cyan-400 to-pink-500 rounded-full blur-lg animate-pulse"></div>
+  <div className="relative p-6 bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500 rounded-full shadow-2xl">
+    <img
+      src="https://media.licdn.com/dms/image/v2/D5603AQERcx2BcsqEmQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711795833930?e=1741219200&v=beta&t=bE5JSwIHKHz4VSmOQBvypifsSz-vVr2x0Dv6pKdGSnk"
+      alt="Pradip Hivare"
+      className="relative rounded-full shadow-2xl w-64 h-64 transform hover:scale-105 transition-transform duration-300"
+    />
+  </div>
+</div>
+
         </div>
       </div>
     </div>

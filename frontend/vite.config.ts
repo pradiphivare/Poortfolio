@@ -1,7 +1,13 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// vite.config.js
-export default {
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
   build: {
     outDir: 'dist', // This tells Vite to build to the 'dist' directory
   },
-}
+});
