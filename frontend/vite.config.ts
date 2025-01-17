@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite';
 
-export default defineConfig({
+// vite.config.js
+export default {
   build: {
-    outDir: 'dist', // Ensure this is set correctly
+    outDir: 'dist', // This tells Vite to build to the 'dist' directory
   },
-});
+}
