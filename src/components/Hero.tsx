@@ -61,7 +61,7 @@ export default function Hero() {
                 src="https://media.licdn.com/dms/image/v2/D5603AQEcFmwc4n_vRA/profile-displayphoto-shrink_400_400/B56ZQ56mh.HoAg-/0/1736138453842?e=1741824000&v=beta&t=al0Q83w1YkEMiISxi1PyZ4mFk0VsIlFhQ3MXkWD74d4"
                 alt="Pradip Hivare"
                 className="relative rounded-full shadow-2xl w-64 h-64 transform hover:scale-105 transition-transform duration-300"
-                style={{ marginLeft: '10px' }} // Adjust the margin to move the image to the right
+                style={{ marginLeft: 'auto', marginRight: 'auto' }} // Center the image
               />
             </div>
           </div>
