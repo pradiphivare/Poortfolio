@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-import pradipImage from '../../assets/pradip.jpg'; // Adjust the path as needed
+import pradipImage from '../assets/pradip.jpg'; // Adjust the path as needed
 
 export default function Hero() {
   return (
