@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import pradipImage from '../assets/pradip.jpg'; // Adjust the path as needed
 
 export default function Hero() {
   return (
@@ -58,7 +59,11 @@ export default function Hero() {
             <div className="absolute inset-0 w-80 h-80 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-lg animate-pulse"></div>
             <div className="relative p-6 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl">
               <img
+<<<<<<< HEAD
                 src="https://media.licdn.com/dms/image/v2/D5603AQEcFmwc4n_vRA/profile-displayphoto-shrink_400_400/B56ZQ56mh.HoAg-/0/1736138453842?e=1747872000&v=beta&t=-wgrF3LPpKHf0C8MH7jGyJi9JHZRpX1eH3lTyzZf2Xk"
+=======
+                src={pradipImage}
+>>>>>>> 705d114cec4105b0712a190544f0a28bc507439f
                 alt="Pradip Hivare"
                 className="relative rounded-full shadow-2xl w-64 h-64 transform hover:scale-105 transition-transform duration-300"
                 style={{ marginLeft: 'auto', marginRight: 'auto' }} // Center the image
