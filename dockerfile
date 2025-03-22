@@ -1,25 +1,13 @@
-# Build the frontend
-FROM node:16 AS build-frontend
-WORKDIR /Poortfolio/frontend
-
-# Install dependencies and build the frontend
-COPY frontend/package*.json ./
+# Step 1: Build the React app
+FROM node:18 AS build
+WORKDIR /app
+COPY package*.json ./
 RUN npm install
-COPY frontend/ ./
+COPY . .
 RUN npm run build
 
-# Set up the backend
-FROM node:16 AS stage-1
-WORKDIR /Poortfolio/backend
-
-# Install backend dependencies
-COPY backend/package*.json ./
-RUN npm install
-COPY backend/ ./
-
-# Copy built frontend into the backend
-COPY --from=build-frontend /Poortfolio/frontend/dist ./public
-
-# Expose backend port
-EXPOSE 3000
-CMD ["npm", "start"]
+# Step 2: Serve the static files with Nginx
+FROM nginx:alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
