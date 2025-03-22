@@ -5,22 +5,29 @@ const experiences = [
     title: 'Engineer',
     company: 'Tata-Elxsi',
     period: 'Dec 2023 – Current',
+    location: 'Pune, India',
     description: (
       <ul className="list-disc pl-5">
         <li>
-          Automated infrastructure provisioning using <strong>Terraform</strong> and <strong>Ansible</strong>, improving scalability and reliability.
+          Automated infrastructure provisioning and management using <strong>Terraform</strong> and <strong>Ansible</strong>, improving system scalability and reliability.
         </li>
         <li>
-          Engineered robust CI/CD workflows with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, reducing release cycles by 30 hours monthly and enhancing iteration speed for critical features.
+          Engineered robust CI/CD workflows with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>; these improvements decreased release cycle duration by 30 hours monthly, allowing for quicker iteration on critical features impacting user experience.
         </li>
         <li>
-          Led migration to advanced observability tools like <strong>Grafana Cloud</strong> and <strong>VictoriaMetrics</strong>, ensuring high availability and optimized incident response.
+          Led Migration and Proactive Monitoring: Managed the migration of monitoring stacks to advanced observability tools like <strong>Grafana Cloud</strong> and <strong>VictoriaMetrics</strong>, ensuring smooth transitions, improved system performance, and enhanced incident management.
         </li>
         <li>
-          Migrated monitoring workloads from <strong>Prometheus</strong> to <strong>VictoriaMetrics</strong>, improving performance and storage efficiency for high-cardinality metrics.
+          Grafana to Grafana Cloud Migration: Successfully transitioned <strong>Grafana</strong> to <strong>Grafana Cloud</strong>, enhancing scalability, simplifying maintenance, and enabling advanced cloud-native features.
         </li>
         <li>
-          Reduced 30-50 support tickets monthly through proactive monitoring and alerting integrations across cloud applications.
+          Prometheus to VictoriaMetrics Migration: Migrated monitoring workloads from <strong>Prometheus</strong> to <strong>VictoriaMetrics</strong>, ensuring improved performance and storage efficiency for handling high-cardinality metrics.
+        </li>
+        <li>
+          Led the integration of monitoring and alerting tools like <strong>VictoriaMetrics</strong> and <strong>Grafana Cloud</strong>, ensuring high availability and early detection of issues across cloud applications and infrastructure, which helped in the reduction of 30-50 support tickets.
+        </li>
+        <li>
+          Slack Bot for Jira Ticket Creation: Designed and implemented a Slack bot to automate Jira ticket creation, streamlining incident tracking and improving response times.
         </li>
       </ul>
     ),
@@ -29,22 +36,17 @@ const experiences = [
     title: 'DevOps Engineer',
     company: 'NoZanzat',
     period: 'July 2022 – Sep 2023',
+    location: 'Pune, India',
     description: (
       <ul className="list-disc pl-5">
         <li>
-          Focused on <strong>Web Development</strong> and <strong>DevOps Foundation</strong>, bridging development and operational workflows.
+          Infrastructure Automation: Designed and implemented CI/CD pipelines using <strong>Jenkins</strong> to automate deployment and provisioning of infrastructure in cloud environments, improving deployment speed by 40%.
         </li>
         <li>
-          Designed and implemented CI/CD pipelines using <strong>Jenkins</strong>, accelerating deployment speed by 40%.
+          Managed cloud infrastructure on <strong>Amazon Web Services (AWS)</strong>, automating provisioning with <strong>Terraform</strong> and <strong>CloudFormation</strong>. Reduced manual configuration errors and increased scalability.
         </li>
         <li>
-          Automated cloud infrastructure provisioning in <strong>AWS</strong> using <strong>Terraform</strong> and <strong>CloudFormation</strong>, reducing manual errors and improving scalability.
-        </li>
-        <li>
-          Enabled seamless setup of virtual machines and databases through automated workflows, achieving 70% process automation.
-        </li>
-        <li>
-          Optimized the software development lifecycle (SDLC) by collaborating with development teams to automate testing and environment provisioning, reducing bottlenecks.
+          Collaborated with development teams to optimize the software development lifecycle (SDLC), reducing bottlenecks by automating testing, deployments, and environment provisioning.
         </li>
       </ul>
     ),
@@ -100,6 +102,9 @@ export default function Experience() {
                       {exp.company}
                     </p>
                     <p className="text-gray-600 mb-2">{exp.period}</p>
+                    {exp.location && (
+                      <p className="text-gray-500 italic mb-2">{exp.location}</p>
+                    )}
                     <div className="text-gray-700">{exp.description}</div>
                   </div>
                 </div>
