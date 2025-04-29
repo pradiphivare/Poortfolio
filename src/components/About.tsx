@@ -38,11 +38,11 @@ export default function About() {
               Passionate about continuous learning, I stay ahead of the curve with the latest in cloud-native technologies, DevOps practices, and open-source contributions, driving innovation in every project I take on.
             </p>
 
-            {/* Expertise Cards */}
+            {/* Expertise Cards with Color Highlights */}
             <div className="space-y-6">
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Code2 className="w-12 h-12 text-black" />
+                  <Code2 className="w-12 h-12 text-teal-600" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
                   <span className="font-bold text-black">Expertise in</span> Automation and CI/CD
@@ -50,7 +50,7 @@ export default function About() {
               </div>
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Server className="w-12 h-12 text-black" />
+                  <Server className="w-12 h-12 text-indigo-600" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
                   <span className="font-bold text-black">Advanced</span> Observability Practices
@@ -58,7 +58,7 @@ export default function About() {
               </div>
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Cloud className="w-12 h-12 text-black" />
+                  <Cloud className="w-12 h-12 text-blue-600" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
                   <span className="font-bold text-black">Cloud Expertise:</span> AWS, Terraform, Kubernetes
@@ -66,7 +66,7 @@ export default function About() {
               </div>
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Shield className="w-12 h-12 text-black" />
+                  <Shield className="w-12 h-12 text-yellow-600" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
                   <span className="font-bold text-black">Security and</span> Monitoring Integrations
