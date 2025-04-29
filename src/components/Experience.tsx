@@ -4,6 +4,8 @@ const experiences = [
   {
     title: 'DevOps, Observability & AIOps Engineer (On Deputation)',
     company: 'Comcast (via Tata Elxsi)',
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Comcast_logo_2018.svg/1200px-Comcast_logo_2018.svg.png', // Company Logo
+    companyImage: 'https://example.com/comcast-image.jpg', // Relevant Image
     period: 'June 2024 – Present',
     location: 'Remote / Pune, India',
     description: (
@@ -24,6 +26,8 @@ const experiences = [
   {
     title: 'Engineer',
     company: 'Tata Elxsi',
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tata_Elxsi_logo.svg/1200px-Tata_Elxsi_logo.svg.png', // Company Logo
+    companyImage: 'https://example.com/tata-elxsi-image.jpg', // Relevant Image
     period: 'Dec 2023 – June 2024',
     location: 'Pune, India',
     description: (
@@ -40,6 +44,8 @@ const experiences = [
   {
     title: 'Engineer',
     company: 'NoZanzat',
+    companyLogo: 'https://example.com/nozanzat-logo.png', // Company Logo
+    companyImage: 'https://example.com/nozanzat-image.jpg', // Relevant Image
     period: 'Jul 2022 – Sep 2023',
     location: 'Pune, India',
     description: (
@@ -71,20 +77,29 @@ export default function Experience() {
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className={`flex items-center ${
-                  index % 2 === 0 ? 'flex-row-reverse' : ''
-                }`}
+                className={`flex items-center ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
               >
-                <div className="w-1/2" />
-                <div className="w-10 h-10 absolute left-1/2 transform -translate-x-1/2 -translate-y-4 rounded-full border-4 border-blue-400 bg-white" />
+                {/* Company Logo and Image */}
+                <div className="w-1/2 flex justify-center items-center">
+                  <div className="flex flex-col items-center space-y-4">
+                    <img
+                      src={exp.companyLogo}
+                      alt={exp.company}
+                      className="w-20 h-20 object-contain mb-4"
+                    />
+                    <img
+                      src={exp.companyImage}
+                      alt={`${exp.company} Image`}
+                      className="w-32 h-32 object-cover rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                {/* Timeline Content */}
                 <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
                   <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    <h3 className="text-xl font-bold text-gray-900">
-                      {exp.title}
-                    </h3>
-                    <p className="text-blue-500 font-semibold">
-                      {exp.company}
-                    </p>
+                    <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
+                    <p className="text-blue-500 font-semibold">{exp.company}</p>
                     <p className="text-gray-600 mb-2">{exp.period}</p>
                     {exp.location && (
                       <p className="text-gray-500 italic mb-2">{exp.location}</p>
