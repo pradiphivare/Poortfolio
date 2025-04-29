@@ -23,9 +23,9 @@ export default function Hero() {
               I'm passionate about creating{" "}
               <span className="text-cyan-400 neon-text">scalable cloud architectures</span> and automating{" "}
               <span className="text-cyan-500 neon-text">infrastructure workflows</span>. With expertise in{" "}
-              <span className="text-cyan-400 neon-text">CI/CD pipelines, observability </span>and 
+              <span className="text-cyan-400 neon-text">CI/CD pipelines, observability </span>and
               <span className="text-cyan-400 neon-text"> modern development practices</span>
-             , I strive to deliver reliable, efficient, and secure solutions for complex challenges.
+              , I strive to deliver reliable, efficient, and secure solutions for complex challenges.
             </p>
             <div className="flex justify-center md:justify-start space-x-6 mt-6">
               <a
@@ -58,10 +58,9 @@ export default function Hero() {
             <div className="absolute inset-0 w-80 h-80 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-lg animate-pulse"></div>
             <div className="relative p-6 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl">
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQEcFmwc4n_vRA/profile-displayphoto-shrink_400_400/B56ZQ56mh.HoAg-/0/1736138453842?e=1747872000&v=beta&t=-wgrF3LPpKHf0C8MH7jGyJi9JHZRpX1eH3lTyzZf2Xk"
+                src="https://media.licdn.com/dms/image/v2/D5603AQF2BPnpTKHLsg/profile-displayphoto-shrink_400_400/B56ZZ1gZ2EGQAk-/0/1745728153676?e=1751500800&v=beta&t=fVvcpPGFwmELG7i7Afnt9srFO0oSud2I-MVko_1los8"
                 alt="Pradip Hivare"
-                className="relative rounded-full shadow-2xl w-64 h-64 transform hover:scale-105 transition-transform duration-300"
-                style={{ marginLeft: 'auto', marginRight: 'auto' }} // Center the image
+                className="w-64 h-64 object-cover rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
