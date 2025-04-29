@@ -5,18 +5,24 @@ import nozanzatImage from '../assets/nozanzat.png';
 
 const experiences = [
   {
-    title: 'DevOps, Observability & AIOps Engineer (On Deputation)',
+    title: 'DevOps & Observability Engineer (On Deputation)',
     company: 'Comcast (via Tata Elxsi)',
     location: 'Remote / Pune, India',
-    period: 'Sep 2023 – Present',
+    period: 'June 2024 – Present',
     companyImage: comcastImage,
     description: (
       <ul className="list-disc pl-5 space-y-1">
-        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong>.</li>
-        <li>Migrated observability stacks from <strong>Datadog</strong> to <strong>Grafana Cloud</strong>.</li>
-        <li>Integrated observability with <strong>Slack</strong> and <strong>Istio</strong>.</li>
-        <li>Automated dashboards using <strong>Grafana REST APIs</strong>.</li>
-        <li>Built a <strong>Slack bot</strong> to automate <strong>Jira ticket creation</strong>.</li>
+        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong> for high-cardinality workloads.</li>
+        <li>Migrated observability stacks from <strong>Datadog</strong> to <strong>Grafana Cloud</strong> for improved visualization, integrations, and cost efficiency.</li>
+        <li>Integrated full-stack observability with <strong>Grafana Cloud</strong>, <strong>Slack</strong>, and <strong>VictoriaMetrics</strong>, reducing support tickets by 30–50%.</li>
+        <li>Automated dashboard and alert migration using <strong>Grafana REST APIs</strong>.</li>
+        <li>Built custom API scripts to replicate monitoring configurations across teams.</li>
+        <li>Implemented distributed tracing using <strong>OpenTelemetry</strong> and <strong>Jaeger</strong>.</li>
+        <li>Integrated observability with <strong>Istio service mesh</strong> for deep traffic insights.</li>
+        <li>Collaborated with platform teams to architect a scalable hybrid-cloud observability strategy.</li>
+        <li>Adopted <strong>GitOps</strong> deployment using <strong>ArgoCD</strong> and <strong>FluxCD</strong>.</li>
+        <li>Enabled predictive insights and intelligent incident management through <strong>AIOps</strong> practices.</li>
+        <li>Built a <strong>Slack bot</strong> for automated <strong>Jira ticket creation</strong> to streamline incident response.</li>
       </ul>
     ),
   },
@@ -24,13 +30,16 @@ const experiences = [
     title: 'Engineer',
     company: 'Tata Elxsi',
     location: 'Pune, India',
-    period: 'Jul 2021 – Present',
+    period: 'Dec 2023 – June 2024',
     companyImage: tataElxsiImage,
     description: (
       <ul className="list-disc pl-5 space-y-1">
-        <li>Provisioned infra using <strong>Terraform</strong> and <strong>Ansible</strong>.</li>
-        <li>Managed CI/CD with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>.</li>
-        <li>Monitored workloads using <strong>Prometheus</strong> and <strong>Grafana</strong>.</li>
+        <li>Automated infrastructure provisioning using <strong>Terraform</strong> and <strong>Ansible</strong> to improve reliability and scalability.</li>
+        <li>Built and maintained CI/CD pipelines using <strong>Jenkins</strong>, <strong>Concourse</strong>, and <strong>GitHub Actions</strong>, saving ~30 engineering hours/month.</li>
+        <li>Implemented monitoring with <strong>Prometheus</strong> and <strong>Grafana</strong> for Kubernetes and apps.</li>
+        <li>Managed services on <strong>AWS ECS</strong> and <strong>EKS</strong> with secure and efficient production deployments.</li>
+        <li>Created <strong>Helm charts</strong> and autoscaling patterns for robust infrastructure.</li>
+        <li>Integrated observability into CI/CD, enabling faster troubleshooting and automated rollbacks.</li>
       </ul>
     ),
   },
@@ -42,9 +51,12 @@ const experiences = [
     companyImage: nozanzatImage,
     description: (
       <ul className="list-disc pl-5 space-y-1">
-        <li>Built CI/CD pipelines using <strong>Jenkins</strong>.</li>
-        <li>Managed AWS infra with <strong>Terraform</strong>.</li>
-        <li>Built backend services in <strong>Python</strong> and <strong>Go</strong>.</li>
+        <li>Optimized CI/CD pipelines using <strong>Jenkins</strong>, improving deployment speed by 40%.</li>
+        <li>Managed AWS infrastructure with <strong>Terraform</strong> and <strong>CloudFormation</strong>.</li>
+        <li>Automated testing and deployments, accelerating SDLC.</li>
+        <li>Developed backend microservices using <strong>Python</strong> and <strong>Go</strong>.</li>
+        <li>Collaborated with frontend and QA teams for seamless feature delivery.</li>
+        <li>Built internal tools for log parsing and metrics collection to improve team visibility.</li>
       </ul>
     ),
   },
@@ -71,7 +83,7 @@ export default function Experience() {
                 {/* Timeline Dot */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 border-4 border-white rounded-full z-20" />
 
-                {/* Image */}
+                {/* Company Image */}
                 <div className="w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0">
                   <img
                     src={exp.companyImage}
