@@ -2,70 +2,54 @@ import React from 'react';
 
 const experiences = [
   {
+    title: 'DevOps, Observability & AIOps Engineer (On Deputation)',
+    company: 'Comcast (via Tata Elxsi)',
+    period: 'June 2024 – Present',
+    location: 'Remote / Pune, India',
+    description: (
+      <ul className="list-disc pl-5">
+        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong> to support high-cardinality workloads with better storage and performance.</li>
+        <li>Migrated observability stacks from <strong>Datadog</strong> to <strong>Grafana Cloud</strong>, achieving superior visualization and cost efficiency.</li>
+        <li>Integrated full-stack observability with <strong>Grafana Cloud</strong>, <strong>Slack</strong>, and <strong>VictoriaMetrics</strong>, reducing support tickets by 30–50%.</li>
+        <li>Automated dashboard and alert migration using <strong>Grafana REST APIs</strong>, improving consistency and reducing manual efforts.</li>
+        <li>Developed custom API scripts to replicate monitoring configurations across teams and environments.</li>
+        <li>Implemented distributed tracing with <strong>OpenTelemetry</strong> and <strong>Jaeger</strong> for microservices latency analysis.</li>
+        <li>Integrated observability with <strong>Istio service mesh</strong> for enhanced service-to-service communication visibility.</li>
+        <li>Adopted <strong>GitOps</strong> practices for deploying observability components using tools like <strong>ArgoCD</strong> and <strong>FluxCD</strong>, ensuring consistent and reliable deployments across environments.</li>
+        <li>Worked closely with platform teams to design and roll out scalable hybrid-cloud observability and <strong>AIOps</strong> strategies, enabling predictive insights, anomaly detection, and intelligent incident management.</li>
+        <li>Built a <strong>Slack bot</strong> to automate <strong>Jira ticket creation</strong>, streamlining incident response workflows and accelerating mean time to resolution (MTTR).</li>
+      </ul>
+    ),
+  },
+  {
     title: 'Engineer',
-    company: 'Tata-Elxsi',
-    period: 'Dec 2023 – Current',
+    company: 'Tata Elxsi',
+    period: 'Dec 2023 – June 2024',
     location: 'Pune, India',
     description: (
       <ul className="list-disc pl-5">
-        <li>
-          Automated infrastructure provisioning and management using <strong>Terraform</strong> and <strong>Ansible</strong>, improving system scalability and reliability.
-        </li>
-        <li>
-          Engineered robust CI/CD workflows with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>; these improvements decreased release cycle duration by 30 hours monthly, allowing for quicker iteration on critical features impacting user experience.
-        </li>
-        <li>
-          Led Migration and Proactive Monitoring: Managed the migration of monitoring stacks to advanced observability tools like <strong>Grafana Cloud</strong> and <strong>VictoriaMetrics</strong>, ensuring smooth transitions, improved system performance, and enhanced incident management.
-        </li>
-        <li>
-          Grafana to Grafana Cloud Migration: Successfully transitioned <strong>Grafana</strong> to <strong>Grafana Cloud</strong>, enhancing scalability, simplifying maintenance, and enabling advanced cloud-native features.
-        </li>
-        <li>
-          Prometheus to VictoriaMetrics Migration: Migrated monitoring workloads from <strong>Prometheus</strong> to <strong>VictoriaMetrics</strong>, ensuring improved performance and storage efficiency for handling high-cardinality metrics.
-        </li>
-        <li>
-          Led the integration of monitoring and alerting tools like <strong>VictoriaMetrics</strong> and <strong>Grafana Cloud</strong>, ensuring high availability and early detection of issues across cloud applications and infrastructure, which helped in the reduction of 30-50 support tickets.
-        </li>
-        <li>
-          Slack Bot for Jira Ticket Creation: Designed and implemented a Slack bot to automate Jira ticket creation, streamlining incident tracking and improving response times.
-        </li>
+        <li>Automated infrastructure provisioning with <strong>Terraform</strong> and <strong>Ansible</strong>, enhancing reliability and scalability.</li>
+        <li>Designed and maintained CI/CD pipelines using <strong>Jenkins</strong>, <strong>Concourse</strong>, and <strong>GitHub Actions</strong>, saving ~30 engineering hours monthly.</li>
+        <li>Implemented end-to-end monitoring with <strong>Prometheus</strong> and <strong>Grafana</strong> for Kubernetes workloads and application health visibility.</li>
+        <li>Deployed and managed services on <strong>AWS ECS</strong> and <strong>EKS</strong>, ensuring high availability and secure deployments.</li>
+        <li>Created Kubernetes-native deployment patterns using <strong>Helm Charts</strong> and autoscaling policies for resilient infrastructure.</li>
+        <li>Embedded observability best practices into CI/CD workflows, improving deployment confidence and enabling rapid troubleshooting with automated rollbacks.</li>
       </ul>
     ),
   },
   {
-    title: 'DevOps Engineer',
+    title: 'Engineer',
     company: 'NoZanzat',
-    period: 'July 2022 – Sep 2023',
+    period: 'Jul 2022 – Sep 2023',
     location: 'Pune, India',
     description: (
       <ul className="list-disc pl-5">
-        <li>
-          Infrastructure Automation: Designed and implemented CI/CD pipelines using <strong>Jenkins</strong> to automate deployment and provisioning of infrastructure in cloud environments, improving deployment speed by 40%.
-        </li>
-        <li>
-          Managed cloud infrastructure on <strong>Amazon Web Services (AWS)</strong>, automating provisioning with <strong>Terraform</strong> and <strong>CloudFormation</strong>. Reduced manual configuration errors and increased scalability.
-        </li>
-        <li>
-          Collaborated with development teams to optimize the software development lifecycle (SDLC), reducing bottlenecks by automating testing, deployments, and environment provisioning.
-        </li>
-      </ul>
-    ),
-  },
-  {
-    title: 'Intern - Full Stack Developer',
-    company: 'Startup Hub',
-    period: 'Jan 2022 – June 2022',
-    description: (
-      <ul className="list-disc pl-5">
-        <li>
-          Contributed to building interactive <strong>web interfaces</strong> using modern front-end frameworks.
-        </li>
-        <li>
-          Developed scalable backend services, enhancing the overall system performance and user experience.
-        </li>
-        <li>
-          Gained foundational knowledge in full-stack development and deployment processes, paving the way for future roles in DevOps and automation.
-        </li>
+        <li>Optimized CI/CD pipelines with <strong>Jenkins</strong>, improving deployment speed and reliability by 40%.</li>
+        <li>Managed AWS infrastructure using <strong>Terraform</strong> and <strong>CloudFormation</strong>, reducing errors and improving consistency.</li>
+        <li>Automated testing and deployment processes, accelerating the SDLC and enabling faster feature delivery.</li>
+        <li>Developed backend services using <strong>Python</strong> and <strong>Go</strong>, contributing to internal microservices and RESTful APIs.</li>
+        <li>Collaborated with frontend and QA teams to ensure comprehensive test coverage and smooth feature delivery.</li>
+        <li>Built internal tools for log parsing and metrics collection, enhancing visibility and troubleshooting efficiency across teams.</li>
       </ul>
     ),
   },
