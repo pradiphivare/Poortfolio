@@ -1,26 +1,21 @@
 import React from 'react';
-import comcastLogo from '../assets/comcast.png';
-import tataElxsiLogo from '../assets/tata-elxsi.png';
-import nozanzatLogo from '../assets/nozanzat.png';
+import comcastImage from '../assets/comcast.png';
+import tataElxsiImage from '../assets/tata-elxsi.png';
+import nozanzatImage from '../assets/nozanzat.png';
 
 const experiences = [
   {
     title: 'DevOps, Observability & AIOps Engineer (On Deputation)',
     company: 'Comcast (via Tata Elxsi)',
     location: 'Remote / Pune, India',
-    companyLogo: comcastLogo,
-    companyImage: comcastLogo,
+    period: 'Sep 2023 – Present',
+    companyImage: comcastImage,
     description: (
       <ul className="list-disc pl-5 space-y-1">
-        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong> for high-cardinality workloads.</li>
+        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong>.</li>
         <li>Migrated observability stacks from <strong>Datadog</strong> to <strong>Grafana Cloud</strong>.</li>
-        <li>Integrated full-stack observability with <strong>Slack</strong> and <strong>VictoriaMetrics</strong>.</li>
-        <li>Automated dashboard and alert migration using <strong>Grafana REST APIs</strong>.</li>
-        <li>Developed custom API scripts to replicate monitoring configs.</li>
-        <li>Implemented tracing with <strong>OpenTelemetry</strong> and <strong>Jaeger</strong>.</li>
-        <li>Integrated observability with <strong>Istio service mesh</strong>.</li>
-        <li>Adopted <strong>GitOps</strong> practices using <strong>ArgoCD</strong> and <strong>FluxCD</strong>.</li>
-        <li>Worked with platform teams for scalable hybrid-cloud observability and <strong>AIOps</strong>.</li>
+        <li>Integrated observability with <strong>Slack</strong> and <strong>Istio</strong>.</li>
+        <li>Automated dashboards using <strong>Grafana REST APIs</strong>.</li>
         <li>Built a <strong>Slack bot</strong> to automate <strong>Jira ticket creation</strong>.</li>
       </ul>
     ),
@@ -29,34 +24,27 @@ const experiences = [
     title: 'Engineer',
     company: 'Tata Elxsi',
     location: 'Pune, India',
-    companyLogo: tataElxsiLogo,
-    companyImage: tataElxsiLogo,
+    period: 'Jul 2021 – Present',
+    companyImage: tataElxsiImage,
     description: (
       <ul className="list-disc pl-5 space-y-1">
-        <li>Automated infrastructure provisioning with <strong>Terraform</strong> and <strong>Ansible</strong>.</li>
-        <li>Maintained CI/CD pipelines with <strong>Jenkins</strong>, <strong>Concourse</strong>, <strong>GitHub Actions</strong>.</li>
-        <li>Monitored Kubernetes workloads using <strong>Prometheus</strong> and <strong>Grafana</strong>.</li>
-        <li>Managed services on <strong>AWS ECS</strong> and <strong>EKS</strong>.</li>
-        <li>Created Helm charts and autoscaling policies.</li>
-        <li>Embedded observability into CI/CD for faster rollbacks.</li>
+        <li>Provisioned infra using <strong>Terraform</strong> and <strong>Ansible</strong>.</li>
+        <li>Managed CI/CD with <strong>Jenkins</strong> and <strong>GitHub Actions</strong>.</li>
+        <li>Monitored workloads using <strong>Prometheus</strong> and <strong>Grafana</strong>.</li>
       </ul>
     ),
   },
   {
     title: 'Engineer',
     company: 'NoZanzat',
-    period: 'Jul 2022 – Sep 2023',
     location: 'Pune, India',
-    companyLogo: nozanzatLogo,
-    companyImage: nozanzatLogo,
+    period: 'Jul 2022 – Sep 2023',
+    companyImage: nozanzatImage,
     description: (
       <ul className="list-disc pl-5 space-y-1">
-        <li>Optimized CI/CD pipelines using <strong>Jenkins</strong>.</li>
-        <li>Managed AWS infra with <strong>Terraform</strong> and <strong>CloudFormation</strong>.</li>
-        <li>Automated testing and deployment processes.</li>
-        <li>Built backend services with <strong>Python</strong> and <strong>Go</strong>.</li>
-        <li>Collaborated with QA and frontend teams for delivery.</li>
-        <li>Built internal log parsing tools for teams.</li>
+        <li>Built CI/CD pipelines using <strong>Jenkins</strong>.</li>
+        <li>Managed AWS infra with <strong>Terraform</strong>.</li>
+        <li>Built backend services in <strong>Python</strong> and <strong>Go</strong>.</li>
       </ul>
     ),
   },
@@ -71,26 +59,28 @@ export default function Experience() {
         </h2>
 
         <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200" />
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-blue-300 h-full z-0" />
 
-          <div className="space-y-20">
+          <div className="space-y-24 relative z-10">
             {experiences.map((exp, index) => (
-              <div key={index} className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+              <div
+                key={index}
+                className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
+              >
+                {/* Timeline Dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 border-4 border-white rounded-full z-20" />
+
+                {/* Image */}
                 <div className="w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0">
-                  <div className="flex flex-col items-center space-y-3">
-                    <img
-                      src={exp.companyLogo}
-                      alt={exp.company}
-                      className="w-20 h-20 object-contain"
-                    />
-                    <img
-                      src={exp.companyImage}
-                      alt={`${exp.company} banner`}
-                      className="w-40 h-28 object-cover rounded-lg"
-                    />
-                  </div>
+                  <img
+                    src={exp.companyImage}
+                    alt={exp.company}
+                    className="w-64 h-40 object-cover rounded-xl shadow-2xl transform hover:scale-105 hover:rotate-1 transition duration-500 ease-in-out"
+                  />
                 </div>
 
+                {/* Text Content */}
                 <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
                   <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
                     <h3 className="text-2xl font-semibold text-gray-900">{exp.title}</h3>
