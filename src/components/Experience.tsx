@@ -4,8 +4,8 @@ const experiences = [
   {
     title: 'DevOps, Observability & AIOps Engineer (On Deputation)',
     company: 'Comcast (via Tata Elxsi)',
-    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Comcast_logo_2018.svg/1200px-Comcast_logo_2018.svg.png', // Company Logo
-    companyImage: 'https://example.com/comcast-image.jpg', // Relevant Image
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Comcast_logo_2018.svg', // Comcast Official Logo
+    companyImage: 'https://media.glassdoor.com/l/66/15/39/2c/comcast-office.jpg', // Realistic Comcast office image
     period: 'June 2024 – Present',
     location: 'Remote / Pune, India',
     description: (
@@ -26,8 +26,8 @@ const experiences = [
   {
     title: 'Engineer',
     company: 'Tata Elxsi',
-    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tata_Elxsi_logo.svg/1200px-Tata_Elxsi_logo.svg.png', // Company Logo
-    companyImage: 'https://example.com/tata-elxsi-image.jpg', // Relevant Image
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Tata_Elxsi_logo.svg', // Tata Elxsi Official Logo
+    companyImage: 'https://media.glassdoor.com/lst/98/f7/17/86/tata-elxsi-office.jpg', // Realistic Tata Elxsi office image
     period: 'Dec 2023 – June 2024',
     location: 'Pune, India',
     description: (
@@ -44,8 +44,8 @@ const experiences = [
   {
     title: 'Engineer',
     company: 'NoZanzat',
-    companyLogo: 'https://example.com/nozanzat-logo.png', // Company Logo
-    companyImage: 'https://example.com/nozanzat-image.jpg', // Relevant Image
+    companyLogo: 'https://via.placeholder.com/150?text=NoZanzat+Logo', // Placeholder (NoZanzat logo not publicly available)
+    companyImage: 'https://via.placeholder.com/300x200?text=NoZanzat+Office', // Placeholder (NoZanzat office)
     period: 'Jul 2022 – Sep 2023',
     location: 'Pune, India',
     description: (
