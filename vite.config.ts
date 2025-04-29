@@ -6,3 +6,5 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
+  },  // <-- Ensure this comma and closing bracket is present
+});
