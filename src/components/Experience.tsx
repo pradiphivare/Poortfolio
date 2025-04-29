@@ -4,58 +4,58 @@ const experiences = [
   {
     title: 'DevOps, Observability & AIOps Engineer (On Deputation)',
     company: 'Comcast (via Tata Elxsi)',
-    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/4/42/Comcast_logo_2018.svg', // Comcast Official Logo
-    companyImage: 'https://media.glassdoor.com/l/66/15/39/2c/comcast-office.jpg', // Realistic Comcast office image
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Comcast_logo_2018.svg/1200px-Comcast_logo_2018.svg.png',
+    companyImage: 'https://www.google.com/imgres?q=comcast%20logo&imgurl=https%3A%2F%2Fsouth.comcast.com%2Fwp-content%2Fuploads%2Fsites%2F23%2F2016%2F12%2FComcast-Logo.png&imgrefurl=https%3A%2F%2Fsouth.comcast.com%2Fcomcast-logo%2F&docid=2HWbh38j7WnQuM&tbnid=VuAfFRzLsbzlgM&vet=12ahUKEwjY5I3SufyMAxUWnK8BHdNrNT0QM3oECBYQAA..i&w=1413&h=794&hcb=2&ved=2ahUKEwjY5I3SufyMAxUWnK8BHdNrNT0QM3oECBYQAA', // Replace with actual image if needed
     period: 'June 2024 – Present',
     location: 'Remote / Pune, India',
     description: (
-      <ul className="list-disc pl-5">
-        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong> to support high-cardinality workloads with better storage and performance.</li>
-        <li>Migrated observability stacks from <strong>Datadog</strong> to <strong>Grafana Cloud</strong>, achieving superior visualization and cost efficiency.</li>
-        <li>Integrated full-stack observability with <strong>Grafana Cloud</strong>, <strong>Slack</strong>, and <strong>VictoriaMetrics</strong>, reducing support tickets by 30–50%.</li>
-        <li>Automated dashboard and alert migration using <strong>Grafana REST APIs</strong>, improving consistency and reducing manual efforts.</li>
-        <li>Developed custom API scripts to replicate monitoring configurations across teams and environments.</li>
-        <li>Implemented distributed tracing with <strong>OpenTelemetry</strong> and <strong>Jaeger</strong> for microservices latency analysis.</li>
-        <li>Integrated observability with <strong>Istio service mesh</strong> for enhanced service-to-service communication visibility.</li>
-        <li>Adopted <strong>GitOps</strong> practices for deploying observability components using tools like <strong>ArgoCD</strong> and <strong>FluxCD</strong>, ensuring consistent and reliable deployments across environments.</li>
-        <li>Worked closely with platform teams to design and roll out scalable hybrid-cloud observability and <strong>AIOps</strong> strategies, enabling predictive insights, anomaly detection, and intelligent incident management.</li>
-        <li>Built a <strong>Slack bot</strong> to automate <strong>Jira ticket creation</strong>, streamlining incident response workflows and accelerating mean time to resolution (MTTR).</li>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>Transitioned from <strong>Prometheus</strong> to <strong>Victoria Metrics</strong> for high-cardinality workloads.</li>
+        <li>Migrated observability stacks from <strong>Datadog</strong> to <strong>Grafana Cloud</strong>.</li>
+        <li>Integrated full-stack observability with <strong>Slack</strong> and <strong>VictoriaMetrics</strong>.</li>
+        <li>Automated dashboard and alert migration using <strong>Grafana REST APIs</strong>.</li>
+        <li>Developed custom API scripts to replicate monitoring configs.</li>
+        <li>Implemented tracing with <strong>OpenTelemetry</strong> and <strong>Jaeger</strong>.</li>
+        <li>Integrated observability with <strong>Istio service mesh</strong>.</li>
+        <li>Adopted <strong>GitOps</strong> practices using <strong>ArgoCD</strong> and <strong>FluxCD</strong>.</li>
+        <li>Worked with platform teams for scalable hybrid-cloud observability and <strong>AIOps</strong>.</li>
+        <li>Built a <strong>Slack bot</strong> to automate <strong>Jira ticket creation</strong>.</li>
       </ul>
     ),
   },
   {
     title: 'Engineer',
     company: 'Tata Elxsi',
-    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Tata_Elxsi_logo.svg', // Tata Elxsi Official Logo
-    companyImage: 'https://media.glassdoor.com/lst/98/f7/17/86/tata-elxsi-office.jpg', // Realistic Tata Elxsi office image
+    companyLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tata_Elxsi_logo.svg/1200px-Tata_Elxsi_logo.svg.png',
+    companyImage: 'https://www.google.com/imgres?q=tata%20elxsi%20logo&imgurl=https%3A%2F%2Fwww.brand2global.com%2Fwp-content%2Fuploads%2F2015%2F08%2FTata-Elxsi-logo.png&imgrefurl=https%3A%2F%2Fwww.brand2global.com%2Fcompanies%2Ftata-elxsi%2Ftata-elxsi-logo-2%2F&docid=AwQHY2UuEP1wtM&tbnid=ujDtBEmZoGS_yM&vet=12ahUKEwjl5MDkufyMAxWHcPUHHTtmCJcQM3oECBsQAA..i&w=300&h=300&hcb=2&ved=2ahUKEwjl5MDkufyMAxWHcPUHHTtmCJcQM3oECBsQAA', // Replace
     period: 'Dec 2023 – June 2024',
     location: 'Pune, India',
     description: (
-      <ul className="list-disc pl-5">
-        <li>Automated infrastructure provisioning with <strong>Terraform</strong> and <strong>Ansible</strong>, enhancing reliability and scalability.</li>
-        <li>Designed and maintained CI/CD pipelines using <strong>Jenkins</strong>, <strong>Concourse</strong>, and <strong>GitHub Actions</strong>, saving ~30 engineering hours monthly.</li>
-        <li>Implemented end-to-end monitoring with <strong>Prometheus</strong> and <strong>Grafana</strong> for Kubernetes workloads and application health visibility.</li>
-        <li>Deployed and managed services on <strong>AWS ECS</strong> and <strong>EKS</strong>, ensuring high availability and secure deployments.</li>
-        <li>Created Kubernetes-native deployment patterns using <strong>Helm Charts</strong> and autoscaling policies for resilient infrastructure.</li>
-        <li>Embedded observability best practices into CI/CD workflows, improving deployment confidence and enabling rapid troubleshooting with automated rollbacks.</li>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>Automated infrastructure provisioning with <strong>Terraform</strong> and <strong>Ansible</strong>.</li>
+        <li>Maintained CI/CD pipelines with <strong>Jenkins</strong>, <strong>Concourse</strong>, <strong>GitHub Actions</strong>.</li>
+        <li>Monitored Kubernetes workloads using <strong>Prometheus</strong> and <strong>Grafana</strong>.</li>
+        <li>Managed services on <strong>AWS ECS</strong> and <strong>EKS</strong>.</li>
+        <li>Created Helm charts and autoscaling policies.</li>
+        <li>Embedded observability into CI/CD for faster rollbacks.</li>
       </ul>
     ),
   },
   {
     title: 'Engineer',
     company: 'NoZanzat',
-    companyLogo: 'https://via.placeholder.com/150?text=NoZanzat+Logo', // Placeholder (NoZanzat logo not publicly available)
-    companyImage: 'https://via.placeholder.com/300x200?text=NoZanzat+Office', // Placeholder (NoZanzat office)
+    companyLogo: 'data:image/png;base64,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', // Replace
+    companyImage: 'data:image/png;base64,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', // Replace
     period: 'Jul 2022 – Sep 2023',
     location: 'Pune, India',
     description: (
-      <ul className="list-disc pl-5">
-        <li>Optimized CI/CD pipelines with <strong>Jenkins</strong>, improving deployment speed and reliability by 40%.</li>
-        <li>Managed AWS infrastructure using <strong>Terraform</strong> and <strong>CloudFormation</strong>, reducing errors and improving consistency.</li>
-        <li>Automated testing and deployment processes, accelerating the SDLC and enabling faster feature delivery.</li>
-        <li>Developed backend services using <strong>Python</strong> and <strong>Go</strong>, contributing to internal microservices and RESTful APIs.</li>
-        <li>Collaborated with frontend and QA teams to ensure comprehensive test coverage and smooth feature delivery.</li>
-        <li>Built internal tools for log parsing and metrics collection, enhancing visibility and troubleshooting efficiency across teams.</li>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>Optimized CI/CD pipelines using <strong>Jenkins</strong>.</li>
+        <li>Managed AWS infra with <strong>Terraform</strong> and <strong>CloudFormation</strong>.</li>
+        <li>Automated testing and deployment processes.</li>
+        <li>Built backend services with <strong>Python</strong> and <strong>Go</strong>.</li>
+        <li>Collaborated with QA and frontend teams for delivery.</li>
+        <li>Built internal log parsing tools for teams.</li>
       </ul>
     ),
   },
@@ -68,45 +68,44 @@ export default function Experience() {
         <h2 className="text-4xl font-bold text-center mb-16 text-blue-700">
           Experience
         </h2>
+
         <div className="relative">
-          {/* Timeline line */}
+          {/* Vertical line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200" />
 
-          {/* Experience items */}
-          <div className="space-y-12">
+          <div className="space-y-20">
             {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className={`flex items-center ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}
-              >
-                {/* Company Logo and Image */}
-                <div className="w-1/2 flex justify-center items-center">
-                  <div className="flex flex-col items-center space-y-4">
+              <div key={index} className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                
+                {/* Company Media */}
+                <div className="w-full md:w-1/2 flex justify-center items-center mb-6 md:mb-0">
+                  <div className="flex flex-col items-center space-y-3">
                     <img
                       src={exp.companyLogo}
                       alt={exp.company}
-                      className="w-20 h-20 object-contain mb-4"
+                      className="w-20 h-20 object-contain"
                     />
                     <img
                       src={exp.companyImage}
-                      alt={`${exp.company} Image`}
-                      className="w-32 h-32 object-cover rounded-lg"
+                      alt={`${exp.company} banner`}
+                      className="w-40 h-28 object-cover rounded-lg"
                     />
                   </div>
                 </div>
 
-                {/* Timeline Content */}
-                <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
-                  <div className="bg-white p-6 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    <h3 className="text-xl font-bold text-gray-900">{exp.title}</h3>
+                {/* Experience Content */}
+                <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'pr-12' : 'pl-12'}`}>
+                  <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                    <h3 className="text-2xl font-semibold text-gray-900">{exp.title}</h3>
                     <p className="text-blue-500 font-semibold">{exp.company}</p>
-                    <p className="text-gray-600 mb-2">{exp.period}</p>
+                    <p className="text-sm text-gray-500 mb-1">{exp.period}</p>
                     {exp.location && (
-                      <p className="text-gray-500 italic mb-2">{exp.location}</p>
+                      <p className="text-sm text-gray-400 italic mb-2">{exp.location}</p>
                     )}
                     <div className="text-gray-700">{exp.description}</div>
                   </div>
                 </div>
+
               </div>
             ))}
           </div>
