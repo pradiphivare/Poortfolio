@@ -42,34 +42,34 @@ export default function About() {
             <div className="space-y-6">
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Code2 className="w-12 h-12 text-blue-600" />
+                  <Code2 className="w-12 h-12 text-black" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
-                  Expertise in <span className="font-bold text-blue-600">Automation and CI/CD</span>
+                  <span className="font-bold text-black">Expertise in</span> Automation and CI/CD
                 </span>
               </div>
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Server className="w-12 h-12 text-blue-600" />
+                  <Server className="w-12 h-12 text-black" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
-                  Advanced <span className="font-bold text-blue-600">Observability Practices</span>
+                  <span className="font-bold text-black">Advanced</span> Observability Practices
                 </span>
               </div>
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Cloud className="w-12 h-12 text-blue-600" />
+                  <Cloud className="w-12 h-12 text-black" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
-                  Cloud Expertise: <span className="font-bold text-blue-600">AWS, Terraform, Kubernetes</span>
+                  <span className="font-bold text-black">Cloud Expertise:</span> AWS, Terraform, Kubernetes
                 </span>
               </div>
               <div className="flex items-center space-x-6">
                 <div className="p-6 bg-white rounded-xl shadow-lg transform hover:scale-110 transition-transform duration-300">
-                  <Shield className="w-12 h-12 text-blue-600" />
+                  <Shield className="w-12 h-12 text-black" />
                 </div>
                 <span className="text-lg font-medium text-gray-900">
-                  Security and <span className="font-bold text-blue-600">Monitoring Integrations</span>
+                  <span className="font-bold text-black">Security and</span> Monitoring Integrations
                 </span>
               </div>
             </div>
