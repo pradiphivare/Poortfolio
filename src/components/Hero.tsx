@@ -53,18 +53,22 @@ export default function Hero() {
             </div>
           </div>
 
-       {/* Image Section */}
-<div className="md:w-1/2 flex justify-center relative">
-  {/* Glow background */}
-  <div className="absolute w-72 h-72 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-3xl animate-pulse"></div>
-  
-  {/* Image container */}
-  <div className="relative z-10 p-2 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl flex items-center justify-center">
-    <img
-      src="https://media.licdn.com/dms/image/v2/D5603AQF2BPnpTKHLsg/profile-displayphoto-shrink_400_400/B56ZZ1gZ2EGQAk-/0/1745728153676?e=1751500800&v=beta&t=fVvcpPGFwmELG7i7Afnt9srFO0oSud2I-MVko_1los8"
-      alt="Pradip Hivare"
-      className="w-64 h-64 object-cover rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-300"
-    />
-  </div>
-</div>
+          {/* Image Section */}
+          <div className="md:w-1/2 flex justify-center relative">
+            {/* Glow background */}
+            <div className="absolute w-72 h-72 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-3xl animate-pulse"></div>
 
+            {/* Image container */}
+            <div className="relative z-10 p-2 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl flex items-center justify-center">
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQF2BPnpTKHLsg/profile-displayphoto-shrink_400_400/B56ZZ1gZ2EGQAk-/0/1745728153676?e=1751500800&v=beta&t=fVvcpPGFwmELG7i7Afnt9srFO0oSud2I-MVko_1los8"
+                alt="Pradip Hivare"
+                className="w-64 h-64 object-cover rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
