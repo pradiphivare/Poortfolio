@@ -11,6 +11,7 @@ export default function Hero() {
     >
       <div className="container mx-auto px-6 py-20">
         <div className="flex flex-col md:flex-row items-center justify-between">
+          
           {/* Text Section */}
           <div className="md:w-1/2 mb-12 md:mb-0 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -54,19 +55,24 @@ export default function Hero() {
           </div>
 
           {/* Image Section */}
-<div className="md:w-1/2 flex justify-center relative">
-  {/* Wrapper for glow + image */}
-  <div className="relative flex items-center justify-center">
-    {/* Glow background (centered behind image) */}
-    <div className="absolute w-72 h-72 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-3xl animate-pulse"></div>
+          <div className="md:w-1/2 flex justify-center relative">
+            <div className="relative flex items-center justify-center">
+              {/* Glow background */}
+              <div className="absolute w-72 h-72 bg-gradient-to-br from-green-400 to-blue-500 rounded-full blur-3xl animate-pulse"></div>
 
-    {/* Image container */}
-    <div className="relative z-10 p-2 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl">
-      <img
-        src="https://media.licdn.com/dms/image/v2/D5603AQF2BPnpTKHLsg/profile-displayphoto-shrink_400_400/B56ZZ1gZ2EGQAk-/0/1745728153676?e=1751500800&v=beta&t=fVvcpPGFwmELG7i7Afnt9srFO0oSud2I-MVko_1los8"
-        alt="Pradip Hivare"
-        className="w-64 h-64 object-cover rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-300"
-      />
+              {/* Image container */}
+              <div className="relative z-10 p-2 bg-gradient-to-br from-green-500 via-blue-500 to-purple-500 rounded-full shadow-2xl">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQF2BPnpTKHLsg/profile-displayphoto-shrink_400_400/B56ZZ1gZ2EGQAk-/0/1745728153676?e=1751500800&v=beta&t=fVvcpPGFwmELG7i7Afnt9srFO0oSud2I-MVko_1los8"
+                  alt="Pradip Hivare"
+                  className="w-64 h-64 object-cover rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  );
+}
